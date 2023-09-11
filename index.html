@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>HomePage</title>
+</head>
+<body>
+    <div class="navbar fixed-top">
+        <a class="navbar-center" href="#home">Home</a>
+        <a class="navbar-center" href="#about">About Us</a>
+        <a class="navbar-center" href="#contact">Contact</a>
+        <div class="icon" href="#login">
+            <i class="fa fa-user"></i>
+        </div>
+    </div>
+
+    <div class="title">
+        <h1>Sampson Global</h1>
+    </div>
+
+    <div class="image-container">
+        <div class="image">
+            <div class="front">
+                <img src="imagini/S-Class.jpg" alt="Imagine 1">
+            </div>
+            <div class="back">
+                <img src="imagini/Black Minimalist Quotes Phone Wallpaper.png" alt="Imagine 2">
+            </div>
+        </div>
+        <div class="image">
+            <div class="front">
+                <img src="imagini/Invitation.png" alt="Imagine 3">
+            </div>
+            <div class="back">
+                <img src="imagini/Black Minimalist Quotes Phone Wallpaper.png" alt="Imagine 4">
+            </div>
+        </div>
+        <div class="image">
+            <div class="front">
+                <img src="imagini/new york img.png" alt="Imagine 5">
+            </div>
+            <div class="back">
+                <img src="imagini/Black Minimalist Quotes Phone Wallpaper.png" alt="Imagine 6">
+            </div>
+        </div>
+    </div>
+<script src="script.js"></script>
+<script>
+    window.addEventListener("scroll", function() {
+    var navbar = document.querySelector(".navbar");
+    if (window.pageYOffset > 1000) {
+        navbar.classList.add("navbar-moving");
+    } else {
+        navbar.classList.remove("navbar-moving");
+    }
+});
+</script>
+</body>
+</html>
